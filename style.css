@@ -1,0 +1,19 @@
+  *{box-sizing:border-box;margin:0;padding:0;}
+  .root{font-family:'DM Sans',var(--font-sans);padding:1.5rem 0;}
+  .top{display:flex;gap:1.5rem;align-items:stretch;margin-bottom:1.5rem;}
+  .swatch-wrap{width:96px;height:96px;border-radius:16px;border:0.5px solid var(--color-border-tertiary);flex-shrink:0;position:relative;overflow:hidden;cursor:pointer;}
+  .swatch-wrap input[type=color]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;}
+  .meta{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:16px;padding:1rem 1.25rem;}
+  .meta-hex{font-size:28px;font-weight:500;color:var(--color-text-primary);letter-spacing:0.01em;font-family:'DM Mono',var(--font-mono);}
+  .meta-rgb{font-size:13px;color:var(--color-text-secondary);font-family:'DM Mono',var(--font-mono);}
+  .meta-hint{font-size:12px;color:var(--color-text-tertiary);display:flex;align-items:center;gap:4px;margin-top:2px;}
+  .section-label{font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;}
+  .card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;transition:border-color 0.15s;}
+  .card:hover{border-color:var(--color-border-primary);}
+  .card-swatch{height:48px;width:100%;}
+  .card-body{padding:8px 10px 10px;}
+  .card-name{font-size:12px;font-weight:500;color:var(--color-text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .card-hex{font-size:11px;color:var(--color-text-secondary);font-family:'DM Mono',var(--font-mono);margin-top:2px;}
+  .card-diff{font-size:10px;color:var(--color-text-tertiary);margin-top:3px;}
+  .best-badge{display:inline-block;font-size:9px;font-weight:500;padding:2px 6px;border-radius:20px;background:var(--color-background-success);color:var(--color-text-success);margin-left:5px;vertical-align:middle;text-transform:uppercase;letter-spacing:0.05em;}
